@@ -1,0 +1,14 @@
+PODS:
+  - SVEJSONObject (0.1.0)
+
+DEPENDENCIES:
+  - SVEJSONObject (from `../`)
+
+EXTERNAL SOURCES:
+  SVEJSONObject:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SVEJSONObject: 1a4f6b0d745fe69cbd786da4dafb0d843eacd685
+
+COCOAPODS: 0.39.0
