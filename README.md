@@ -84,7 +84,7 @@ let name = try user["name"]
 ```
 #### Chaining subscript calls
 
-Each subscript call returns an instance of JASON.JSON to allow chaining.
+Each subscript call returns an instance of JSONObject to allow chaining.
 
 ```swift
 let name = try users[0]["name"]
@@ -149,7 +149,7 @@ pod "SVEJSONObject"
 
 ## Author
 
-Sérgio Estêvão, sergio.estevao@gmail.com
+Sérgio Estêvão, sergio.estevao@gmail.com
 
 ## License
 
