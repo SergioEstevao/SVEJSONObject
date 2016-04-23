@@ -3,7 +3,11 @@
     "id": 1,
     "name": "Sergio",
     "weight": 70.5,
-    "photos": []
+    "photos": [{
+            "url": "http://fake.com/sergio.jpeg",
+            "width": 100,
+            "height": 200
+            }]
   },
   {
     "id": 2,

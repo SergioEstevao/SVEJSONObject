@@ -7,8 +7,7 @@ class ViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        loadJSONClassic()
+        // Do any additional setup after loading the view, typically from a nib.        
         loadJSONObject()
     }
 
@@ -36,6 +35,7 @@ class ViewController: UITableViewController {
                         return
                 }
                 print("\(id) : \(name)'s weight is \(weight)")
+                data.append("\(id) : \(name)'s weight is \(weight)")
             }
         } catch {
             print(error)
@@ -55,9 +55,9 @@ class ViewController: UITableViewController {
             let users = try JSONObject(url: url)
             for user in users {
                 let id = try user["id"].int()
-                let name = try user["fullname"].string()
+                let name = try user["name"].string()
                 let weight = try user["weight"].double()
-                print("\(id) : \(name)'s weight is \(weight)")
+                print("\(id) : \(name)'s weight is \(weight).")
                 data.append("\(id) : \(name)'s weight is \(weight)")
             }
         } catch {
